@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="h-[2000px]">
+    <!---------------------------------Header-------------------------------->
+
+    <header
+      class="flex justify-between items-center bg-emerald-700 p-5 fixed w-full bg-opacity-85 z-10"
+    >
+      <!--------------side nav and Logo Container for sm screen-------->
+      <div class="flex gap2 items-center justify-center gap-3">
+        <div class="sm:hidden">
+          <div class="relative">
+            <!----- Bars Logo ----->
+            <input type="checkbox" id="menu" class="peer hidden" />
+            <label for="menu" class="cursor-pointer text-emerald-50">
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </label>
+
+            <!-- Side nav container -->
+
+            <div
+              class="nav-menu fixed top-0 left-0 w-[50%] h-full bg-emerald-600 transition-transform transform -translate-x-full duration-300 ease-in-out"
+            >
+              <span class="block p-2 rounded">
+                <label
+                  for="menu"
+                  class="cursor-pointer text-emerald-50 block m-4"
+                >
+                  <i class="fa-solid fa-times text-2xl"></i>
+                </label>
+              </span>
+              <!---- Side-Bar ----->
+              <aside class="sm:block">
+                <ul
+                  class="flex flex-col items-center justify-center gap-5 text-emerald-50"
+                >
+                  <li class="w-full px-2">
+                    <a href="#header" class="side-bar-nav">Home</a>
+                  </li>
+                  <li class="w-full px-2">
+                    <a class="side-bar-nav" href="#aboutUs">About Us</a>
+                  </li>
+                  <li class="w-full px-2">
+                    <a class="side-bar-nav" href="#skills">Skills</a>
+                  </li>
+                  <li class="w-full px-2">
+                    <a class="side-bar-nav" href="#certificate">Certificate</a>
+                  </li>
+                  <li class="w-full px-2">
+                    <a class="side-bar-nav" href="#contactUs">Contact Us</a>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+
+        <!-----------Header Logo------>
+        <div>
+          <a href="#header" class="uppercase font-bold text-emerald-50"
+            ><div class="transition-all duration-300 hover:scale-110">
+              <i class="fa-solid fa-user mr-1 text-emerald-50"></i> Portfolio
+            </div></a
+          >
+        </div>
+      </div>
+
+      <!-----------Header Nav bar------>
+      <nav class="hidden sm:block sm:text-sm md:text-base">
+        <ul
+          class="flex items-center justify-center sm:gap-1 rounded-full md:gap-4 text-emerald-50"
+        >
+          <li>
+            <a href="#header" class="main-nav-bar">Home</a>
+          </li>
+          <li>
+            <a href="#aboutUs" class="main-nav-bar">About Us</a>
+          </li>
+          <li>
+            <a href="#skills" class="main-nav-bar">Skills</a>
+          </li>
+          <li>
+            <a href="#certificate" class="main-nav-bar">Certificate</a>
+          </li>
+          <li>
+            <a href="#contactUs" class="main-nav-bar">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <!----------Day Night Button------>
+      <label
+        for="check"
+        class="bg-gray-100 w-16 h-9 rounded-full relative cursor-pointer block hover:scale-110 transition-all duration-300"
+      >
+        <input type="checkbox" id="check" class="peer w-7 opacity-0" />
+        <span
+          class="w-7 h-7 bg-emerald-300 absolute rounded-full top-1 left-1 peer-checked:bg-emerald-600 peer-checked:left-8 transition-all duration-500 z-10"
+        ></span>
+        <span
+          class="w-7 h-7 absolute rounded-full top-1 left-1 text-emerald-600 flex justify-center items-center"
+        >
+          <i class="fa-solid fa-sun text-xl"></i>
+        </span>
+        <span
+          class="w-7 h-7 absolute rounded-full top-1 left-8 text-center text-emerald-600 flex justify-center items-center"
+        >
+          <i class="fa-solid fa-moon text-xl"></i>
+        </span>
+      </label>
+    </header>
+
+    <main class="pt-16 bg-green-50 text-stone-700">
+      <!----------------------------Home Section------------------------>
+      <section
+        class="flex flex-col gap-4 sm:gap-0 sm:flex-row sm:justify-between py-20 px-10 sm:px-4 md:px-14 bg-green-50"
+        id="header"
+      >
+        <article
+          class="flex flex-col justify-center items-center sm:items-start gap-7 sm:w-[50%] order-2 sm:order-1"
+        >
+          <!---------Heading------>
+          <div class="heading-text">Anikat Kushwaha</div>
+
+          <!---------Intro Text------>
+          <div class="text-stone-500 text-center sm:text-left">
+            Hello, I'm Anikat Kushwaha, a passionate learner diving into the
+            world of MERN (MongoDB, Express.js, React, Node.js) stack
+            development.
+          </div>
+
+          <!---------Social Icon ------>
+
+          <div class="flex gap-5 text-emerald-800">
+            <div>
+              <a href="https://www.instagram.com/___aniket__kushwaha_/">
+                <i
+                  class="fa-brands fa-instagram transition-all duration-300 hover:scale-125"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.facebook.com/profile.php?id=100011027110573">
+                <i
+                  class="fa-brands fa-facebook transition-all duration-300 hover:scale-125"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://github.com/AnikatKumarKushwaha"
+                ><i
+                  class="fa-brands fa-github transition-all duration-300 hover:scale-125"
+                ></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/anikat-kushwaha-71198b260/">
+                <i
+                  class="fa-brands fa-linkedin transition-all duration-300 hover:scale-125"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <!---------Download Resume Button---->
+          <button
+            class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 py-2 w-80 sm:w-48 md:w-80 rounded-full text-emerald-50 transition-all duration-300 active:-translate-y-1 hover:shadow-2xl active:shadow-sm hover:-translate-y-3"
+          >
+            <span class="mr-4"
+              ><i class="fa-solid fa-arrow-down animate-bounce"></i
+            ></span>
+            Download Resume
+          </button>
+        </article>
+        <!--------------Profile Image------>
+        <figure
+          class="flex justify-center items-center sm:w-[50%] order-1 sm:order-2"
+        >
+          <img
+            src="../img/profile.jpeg"
+            alt="Profile picture"
+            class="w-80 h-60 sm:w-[90%] sm:h-[80%] lg:w-[80%] lg:h-[78%] object-cover rounded-md shadow-md transition-all duration-500 hover:scale-105 hover:outline hover:outline-4 hover:outline-emerald-500 hover:outline-offset-4 hover:shadow-xl"
+          />
+        </figure>
+      </section>
+
+      <!----------------------------About Me Section------------------------>
+
+      <section
+        id="aboutUs"
+        class="flex sm:gap-4 sm:flex-row flex-col justify-between py-14 px-10 sm:px-4 md:px-14 bg-yellow-50"
+      >
+        <!--------------Profile Image----->
+        <figure class="flex justify-center items-center sm:w-[50%]">
+          <img
+            src="../img/AboutMe.jpg"
+            alt="AboutMe"
+            class="w-80 h-60 sm:w-[90%] sm:h-[60%] lg:w-[80%] lg:h-[78%] object-cover rounded-md shadow-md transition-all duration-500 hover:scale-105 hover:outline hover:outline-4 hover:outline-emerald-500 hover:outline-offset-4 hover:shadow-xl"
+          />
+        </figure>
+        <article
+          class="flex flex-col justify-center items-center sm:items-start lg:gap-7 sm:w-[50%] order-2 sm:order-1"
+        >
+          <!--------Heading----------->
+          <h1 class="heading-text">About Me</h1>
+          <div class="flex flex-col gap-7 h-[80%] w-full">
+            <h2 class="text-center sm:text-left text-stone-400">
+              Aspiring MERN Developer
+            </h2>
+            <!---------About Content---------->
+            <div class="text-stone-500 text-justify sm:text-left">
+              Hello! I'm Anikat Kushwaha, a passionate learner in the world of
+              MERN (MongoDB, Express.js, React, Node.js). Currently, I'm
+              enhancing my skills through a course on Internshala, gaining
+              hands-on experience in full-stack development. My goal is to use
+              these skills to contribute to innovative projects and grow as a
+              developer in the tech landscape.
+            </div>
+
+            <div class="flex justify-center items-center sm:justify-start">
+              <!-----------Read More Button------>
+              <button
+                class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 py-2 w-80 sm:w-48 md:w-80 rounded-full text-emerald-50 transition-all duration-300 active:-translate-y-1 hover:shadow-2xl active:shadow-sm hover:-translate-y-3"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!----------------------------Skills Section------------------------>
+
+      <section
+        id="skills"
+        class="flex flex-col sm:flex-row gap-5 justify-between py-14 px-10 sm:px-4 md:px-14 bg-emerald-700 text-emerald-50"
+      >
+        <article class="sm:w-[50%]">
+          <!--------------Heading---------->
+
+          <h1 class="heading-text inline-block">Skills</h1>
+
+          <!------Skills List---->
+
+          <ul class="flex flex-col justify-center gap-7 text-emerald-100 mt-10">
+            <li class="text-sm text-justify">
+              <h3 class="text-base font-bold text-emerald-400">
+                <span class="hover:-translate-y-1 inline-block transition-all"
+                  >HTML (85%)</span
+                >
+              </h3>
+              I have a strong foundation in HTML, enabling me to structure web
+              content effectively and semantically. My proficiency allows me to
+              create well-organized and accessible web pages.
+            </li>
+            <li class="text-sm text-justify">
+              <h3 class="text-base font-bold text-emerald-400">
+                <span class="hover:-translate-y-1 inline-block transition-all"
+                  >CSS (80%)</span
+                >
+              </h3>
+              My CSS skills allow me to style web pages with precision, ensuring
+              they are visually appealing and responsive across various devices.
+            </li>
+            <li class="text-sm text-justify">
+              <h3 class="text-base font-bold text-emerald-400">
+                <span class="hover:-translate-y-1 inline-block transition-all"
+                  >Tailwind CSS (75%)</span
+                >
+              </h3>
+              I use Tailwind CSS to rapidly build custom designs without writing
+              extensive custom CSS, resulting in efficient and maintainable
+              code.
+            </li>
+            <li class="text-sm text-justify">
+              <h3 class="text-base font-bold text-emerald-400">
+                <span class="hover:-translate-y-1 inline-block transition-all"
+                  >JavaScript (60%)</span
+                >
+              </h3>
+              I have a solid understanding of JavaScript, enabling me to add
+              interactivity and dynamic features to web applications.
+            </li>
+          </ul>
+        </article>
+
+        <article class="sm:w-[50%] flex flex-col justify-center gap-7">
+          <!----Linear Progress bar -->
+
+          <div class="flex justify-center items-center">
+            <div
+              class="w-28 peer transition-all duration-300 hover:font-bold hover:scale-105 hover:text-emerald-400"
+            >
+              HTML
+            </div>
+            <div
+              class="w-full h-2 bg-emerald-200 flex rounded-full transition-all duration-300 peer-hover:h-4"
+            >
+              <div class="w-[85%] bg-emerald-900 rounded-full"></div>
+            </div>
+          </div>
+
+          <!----CSS skill -->
+          <div class="flex justify-center items-center">
+            <div
+              class="peer w-28 transition-all duration-300 hover:font-bold hover:scale-105 hover:text-emerald-400"
+            >
+              CSS
+            </div>
+            <div
+              class="w-full h-2 bg-emerald-200 flex rounded-full transition-all duration-300 peer-hover:h-4"
+            >
+              <div class="w-[80%] bg-emerald-900 rounded-full"></div>
+            </div>
+          </div>
+
+          <!----JS skill -->
+          <div class="flex justify-center items-center">
+            <div
+              class="peer w-28 transition-all duration-300 hover:font-bold hover:scale-105 hover:text-emerald-400"
+            >
+              Java-Script
+            </div>
+            <div
+              class="w-full h-2 bg-emerald-200 flex rounded-full transition-all duration-300 peer-hover:h-4"
+            >
+              <div class="w-[60%] bg-emerald-900 rounded-full"></div>
+            </div>
+          </div>
+
+          <!----Tailwind skill -->
+          <div class="flex justify-center items-center">
+            <div
+              class="peer w-28 transition-all duration-300 hover:font-bold hover:scale-105 hover:text-emerald-400"
+            >
+              Tailwind
+            </div>
+            <div
+              class="w-full h-2 bg-emerald-200 flex rounded-full transition-all duration-300 peer-hover:h-4"
+            >
+              <div class="w-[75%] bg-emerald-900 rounded-full"></div>
+            </div>
+          </div>
+
+          <!---------- Circular Progress indicators----->
+
+          <div class="flex justify-around items-center gap mt-10">
+            <!----------HTML---->
+
+            <div class="hover:scale-105 transition-all duration-300">
+              <div
+                class="p-2 rounded-full"
+                style="background: conic-gradient(#064e3b 85%, #a7f3d0 85%)"
+              >
+                <div
+                  class="bg-emerald-700 p-7 rounded-full w-10 h-10 flex justify-center items-center"
+                >
+                  85%
+                </div>
+              </div>
+              <h5 class="text-center">HTML</h5>
+            </div>
+            <!----------CSS---->
+
+            <div class="hover:scale-105 transition-all duration-300">
+              <div
+                class="p-2 rounded-full"
+                style="background: conic-gradient(#064e3b 80%, #a7f3d0 80%)"
+              >
+                <div
+                  class="bg-emerald-700 p-7 rounded-full w-10 h-10 flex justify-center items-center"
+                >
+                  85%
+                </div>
+              </div>
+              <h5 class="text-center">CSS</h5>
+            </div>
+            <!----------JS---->
+
+            <div class="hover:scale-105 transition-all duration-300">
+              <div
+                class="p-2 rounded-full"
+                style="background: conic-gradient(#064e3b 60%, #a7f3d0 60%)"
+              >
+                <div
+                  class="bg-emerald-700 p-7 rounded-full w-10 h-10 flex justify-center items-center"
+                >
+                  60%
+                </div>
+              </div>
+              <h5 class="text-center">JS</h5>
+            </div>
+            <!----------Tailwind---->
+
+            <div class="hover:scale-105 transition-all duration-300">
+              <div
+                class="p-2 rounded-full"
+                style="background: conic-gradient(#064e3b 70%, #a7f3d0 70%)"
+              >
+                <div
+                  class="bg-emerald-700 p-7 rounded-full w-10 h-10 flex justify-center items-center"
+                >
+                  70%
+                </div>
+              </div>
+              <h5 class="text-center">JS</h5>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!----------------------------Certification Section------------------------>
+      <section
+        id="certificate"
+        class="py-14 px-10 sm:px-4 md:px-14 bg-green-50"
+      >
+        <!---------Heading--------->
+
+        <h1 class="heading-text inline-block">Certification</h1>
+
+        <!-------Certification And Details------>
+        <div
+          class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center align-middle lg:grid-cols-3 h-[80%]"
+        >
+          <!-----------first Certificate-->
+          <div class="certificate-card">
+            <figure class="flex justify-center">
+              <img src="../img/logo-udemy.svg" alt="usemy" class="w-14 h-10" />
+            </figure>
+            <figure class="flex justify-between items-center">
+              <img
+                src="../img/johnas.jpeg"
+                alt="jonas"
+                class="w-16 h-16 rounded-full shadow-sm"
+              />
+              <figcaption class="w-[65%]">
+                <div class="font-bold text-sm">Jonas Schmedtmann</div>
+                <div class="text-xs">Web Developer, Designer, and Teacher</div>
+              </figcaption>
+            </figure>
+            <hr class="h-[2px] bg-slate-300 my-4" />
+            <div>
+              <div class="font-bold text-sm">
+                Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+              </div>
+              <div class="text-xs text-slate-400 mt-4">Date: june 22,2023</div>
+              <div class="text-xs text-slate-400">Length: 28h 9min</div>
+            </div>
+            <div class="mt-4 flex justify-center">
+              <!----------Button to Trigger Pop Up modal with id #popup1------>
+
+              <a href="#popup1" class="certificate-button">Open Certificate</a>
+            </div>
+          </div>
+
+          <!-----------Second Certificate-->
+
+          <div class="certificate-card">
+            <figure class="flex justify-center">
+              <img src="../img/logo-udemy.svg" alt="usemy" class="w-14 h-10" />
+            </figure>
+            <figure class="flex justify-between items-center">
+              <img
+                src="../img/academind.jpeg"
+                alt="jonas"
+                class="w-16 h-16 rounded-full shadow-sm"
+              />
+              <figcaption class="w-[65%]">
+                <div class="font-bold text-sm">Maximilian Schwarzmüller</div>
+                <div class="text-xs">
+                  AWS certified,Web Developer and Instructor
+                </div>
+              </figcaption>
+            </figure>
+            <hr class="h-[2px] bg-slate-300 my-4" />
+            <div>
+              <div class="font-bold text-sm">
+                React Native - The Practical Guide [2024]
+              </div>
+              <div class="text-xs text-slate-400 mt-4">Date: june 22,2023</div>
+              <div class="text-xs text-slate-400">Length: 28h 5min</div>
+            </div>
+            <div class="mt-4 flex justify-center">
+              <!----------Button to Trigger Pop Up modal with id #popup2------>
+
+              <a href="#popup2" class="certificate-button">Open Certificate</a>
+            </div>
+          </div>
+
+          <!-----------Third Certificate-->
+
+          <div class="certificate-card">
+            <figure class="flex justify-center">
+              <img src="../img/logo-udemy.svg" alt="usemy" class="w-14 h-10" />
+            </figure>
+            <figure class="flex justify-between items-center">
+              <img
+                src="../img/academind.jpeg"
+                alt="jonas"
+                class="w-16 h-16 rounded-full shadow-sm"
+              />
+              <figcaption class="w-[65%]">
+                <div class="font-bold text-sm">Maximilian Schwarzmüller</div>
+                <div class="text-xs">
+                  AWS certified,Web Developer and Instructor
+                </div>
+              </figcaption>
+            </figure>
+            <hr class="h-[2px] bg-slate-300 my-4" />
+            <div>
+              <div class="font-bold text-sm">
+                React - The Complete Guide 2024 (incl. Next.js, Redux)
+              </div>
+              <div class="text-xs text-slate-400 mt-4">Date: March 22,2024</div>
+              <div class="text-xs text-slate-400">Length: 68h 35min</div>
+            </div>
+            <div class="mt-4 flex justify-center">
+              <!----------Button to Trigger Pop Up modal with id #popup1------>
+              <a href="#popup3" class="certificate-button">Open Certificate</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------------------------Project Section------------------------>
+      <section id="project" class="py-14 px-10 sm:px-4 md:px-14 bg-yellow-50">
+        <!-----------Heading------>
+
+        <h1 class="heading-text inline-block">Project section</h1>
+
+        <!---------Project Container with 6 cards----->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center gap-6 mt-10"
+        >
+          <!---------------First Card-->
+
+          <div class="flip-card w-48 h-60">
+            <div class="flip-card-inner relative w-full h-full">
+              <!-- Front Side -->
+
+              <div class="flip-card-front absolute w-full h-full bg-white">
+                <img
+                  src="../img/projectSection_1.jpg"
+                  alt="projectImage"
+                  class="w-full h-full object-cover rounded-md shadow-2xl"
+                />
+                <div class="absolute bottom-3 left-3 text-slate-50 font-bold">
+                  Guess The Number
+                </div>
+              </div>
+              <!-- Back Side -->
+
+              <div class="card-back bg-slate-950 text-slate-50">
+                <div class="text-sm text-center font-semibold">
+                  Guess The Number
+                </div>
+                <p class="text-xs text-slate-300 text-center">
+                  Guess the Number is a React Native app where users think of a
+                  number, and the app tries to guess it based on user feedback.
+                  With an intuitive interface and smart guessing algorithm, it
+                  provides a fun and engaging experience.
+                </p>
+                <div class="flex justify-center items-center">
+                  <a
+                    href="https://github.com/AnikatKumarKushwaha/GuessTheNumber"
+                    class="px-4 py-1 bg-emerald-500 text-emerald-50 inline-block rounded-full hover: hover:bg-emerald-700"
+                    ><i class="fa-brands fa-github"></i> Get Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------------Second-Project-------->
+
+          <div class="flip-card w-48 h-60">
+            <div class="flip-card-inner relative w-full h-full">
+              <!-- Front Side -->
+
+              <div class="flip-card-front absolute w-full h-full bg-white">
+                <img
+                  src="../img/projectSection_2.jpg"
+                  alt="projectImage"
+                  class="w-full h-full object-cover rounded-md shadow-2xl"
+                />
+                <div class="absolute bottom-3 left-3 text-slate-50 font-bold">
+                  Tourism Website
+                </div>
+              </div>
+
+              <!-- Back Side -->
+
+              <div class="card-back bg-cyan-500 text-slate-50">
+                <div class="text-sm text-center font-semibold">
+                  Tourism Website
+                </div>
+                <p class="text-xs text-cyan-100 text-center">
+                  Guess the Number is a React Native app where users think of a
+                  number, and the app tries to guess it based on user feedback.
+                  With an intuitive interface and smart guessing algorithm, it
+                  provides a fun and engaging experience.
+                </p>
+                <div class="flex justify-center items-center">
+                  <a
+                    href="https://github.com/AnikatKumarKushwaha/Assam-tourism-react-js-"
+                    class="px-4 py-1 bg-emerald-500 text-emerald-50 inline-block rounded-full hover: hover:bg-emerald-700"
+                    ><i class="fa-brands fa-github"></i> Get Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------------third-Project-------->
+
+          <div class="flip-card w-48 h-60">
+            <div class="flip-card-inner relative w-full h-full">
+              <!-- Front Side -->
+
+              <div class="flip-card-front absolute w-full h-full bg-white">
+                <img
+                  src="../img/projectSection_3.jpg"
+                  alt="projectImage"
+                  class="w-full h-full object-cover rounded-md shadow-2xl"
+                />
+                <div class="absolute bottom-3 left-3 text-slate-50 font-bold">
+                  Weather Website
+                </div>
+              </div>
+              <!-- Back Side -->
+
+              <div class="card-back bg-blue-600 text-slate-50">
+                <div class="text-sm text-center font-semibold">
+                  Weather Website
+                </div>
+                <p class="text-xs text-cyan-100 text-center">
+                  Guess the Number is a React Native app where users think of a
+                  number, and the app tries to guess it based on user feedback.
+                  With an intuitive interface and smart guessing algorithm, it
+                  provides a fun and engaging experience.
+                </p>
+                <div class="flex justify-center items-center">
+                  <a
+                    href="https://github.com/AnikatKumarKushwaha/GuessTheNumber"
+                    class="px-4 py-1 bg-emerald-500 text-emerald-50 inline-block rounded-full hover: hover:bg-emerald-700"
+                    ><i class="fa-brands fa-github"></i> Get Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------------Fourt-Project-------->
+
+          <div class="flip-card w-48 h-60">
+            <div class="flip-card-inner relative w-full h-full">
+              <!-- Front Side -->
+
+              <div class="flip-card-front absolute w-full h-full bg-white">
+                <img
+                  src="../img/projectSection_4.jpg"
+                  alt="projectImage"
+                  class="w-full h-full object-cover rounded-md shadow-2xl"
+                />
+                <div class="absolute bottom-3 left-3 text-slate-50 font-bold">
+                  Tree House Website
+                </div>
+              </div>
+              <!-- Back Side -->
+
+              <div class="card-back bg-amber-700 text-slate-50">
+                <div class="text-sm text-center font-semibold">
+                  Tree House Website
+                </div>
+                <p class="text-xs text-cyan-100 text-center">
+                  Guess the Number is a React Native app where users think of a
+                  number, and the app tries to guess it based on user feedback.
+                  With an intuitive interface and smart guessing algorithm, it
+                  provides a fun and engaging experience.
+                </p>
+                <div class="flex justify-center items-center">
+                  <a
+                    href="https://github.com/AnikatKumarKushwaha/TreeHouseResourt"
+                    class="px-4 py-1 bg-emerald-500 text-emerald-50 inline-block rounded-full hover: hover:bg-emerald-700"
+                    ><i class="fa-brands fa-github"></i> Get Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------------Fifth-Project-------->
+
+          <div class="flip-card w-48 h-60">
+            <div class="flip-card-inner relative w-full h-full">
+              <!-- Front Side -->
+
+              <div class="flip-card-front absolute w-full h-full bg-white">
+                <img
+                  src="../img/projectSection_5.jpg"
+                  alt="projectImage"
+                  class="w-full h-full object-cover rounded-md shadow-2xl"
+                />
+                <div class="absolute bottom-3 left-3 text-slate-50 font-bold">
+                  Food Ordering
+                </div>
+              </div>
+              <!-- Back Side -->
+
+              <div class="card-back bg-orange-300 text-slate-50">
+                <div class="text-sm text-center font-semibold">
+                  Food Ordering
+                </div>
+                <p class="text-xs text-cyan-100 text-center">
+                  Guess the Number is a React Native app where users think of a
+                  number, and the app tries to guess it based on user feedback.
+                  With an intuitive interface and smart guessing algorithm, it
+                  provides a fun and engaging experience.
+                </p>
+                <div class="flex justify-center items-center">
+                  <a
+                    href="https://github.com/AnikatKumarKushwaha/food-menu-navigation"
+                    class="px-4 py-1 bg-emerald-500 text-emerald-50 inline-block rounded-full hover: hover:bg-emerald-700"
+                    ><i class="fa-brands fa-github"></i> Get Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-------------Sixth-Project-------->
+
+          <div class="flip-card w-48 h-60">
+            <div class="flip-card-inner relative w-full h-full">
+              <!-- Front Side -->
+
+              <div class="flip-card-front absolute w-full h-full bg-white">
+                <img
+                  src="../img/projectSection_6.jpg"
+                  alt="projectImage"
+                  class="w-full h-full object-cover rounded-md shadow-2xl"
+                />
+                <div class="absolute bottom-3 left-3 text-slate-50 font-bold">
+                  ToDo List
+                </div>
+              </div>
+              <!-- Back Side -->
+
+              <div class="card-back bg-yellow-700 text-slate-50">
+                <div class="text-sm text-center font-semibold">ToDo List</div>
+                <p class="text-xs text-cyan-100 text-center">
+                  Guess the Number is a React Native app where users think of a
+                  number, and the app tries to guess it based on user feedback.
+                  With an intuitive interface and smart guessing algorithm, it
+                  provides a fun and engaging experience.
+                </p>
+                <div class="flex justify-center items-center">
+                  <a
+                    href="https://github.com/AnikatKumarKushwaha/todo-Assesment"
+                    class="px-4 py-1 bg-emerald-500 text-emerald-50 inline-block rounded-full hover: hover:bg-emerald-700"
+                    ><i class="fa-brands fa-github"></i> Get Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!----------------------------Contact Us Section------------------------>
+      <section
+        id="contactUs"
+        class="py-14 bg-green-50 flex flex-col justify-center items-center"
+      >
+        <div class="w-[80%] h-[75%]">
+          <div
+            class="h-full w-full bg-cover bg-no-repeat bg-center flex justify-between rounded-md shadow-md"
+            style="background-image: url('../img/laptop-2838921_640.jpg')"
+          >
+            <div
+              class="bg-emerald-50 bg-opacity-80 w-[100%] sm:w-[80%] md:w-[60%] px-10 py-5"
+            >
+              <!-------Heading---------->
+
+              <h2 class="text-center heading-text">CONTACT US</h2>
+
+              <form
+                action=""
+                class="h-[90%] flex flex-col justify-center gap-4"
+              >
+                <!-----Name Input----->
+
+                <div>
+                  <label for="name" class="block">Name</label>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    id="name"
+                    class="w-full px-3 py-1 rounded-md mt-3 transition-all duration-300 hover:-translate-y-2 focus:-translate-y-1 outline-none focus:border-b-2 focus:border-green-500"
+                  />
+                </div>
+
+                <!-----email Input----->
+
+                <div>
+                  <label for="email" class="block">Email</label>
+                  <input
+                    type="email"
+                    placeholder="Enter your Email"
+                    id="email"
+                    class="w-full px-3 py-1 rounded-md mt-3 transition-all duration-300 hover:-translate-y-2 focus:-translate-y-1 outline-none focus:border-b-2 focus:border-green-500"
+                  />
+                </div>
+
+                <!-----Message Input----->
+
+                <div>
+                  <label for="message" class="block">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Enter your message here..."
+                    class="w-full px-3 py-1 rounded-md mt-3 transition-all duration-300 hover:-translate-y-2 focus:-translate-y-1 outline-none focus:border-b-2 focus:border-green-500"
+                  ></textarea>
+                </div>
+                <div>
+                  <!------Submition Button------>
+                  <button
+                    class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 px-8 py-2 rounded-full text-emerald-50 hover:-translate-y-2 active:-translate-y-1 transition-all duration-300"
+                  >
+                    Confirm
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <!----------------------------Footer Section------------------------>
+      <!---Sementic footer tag---->
+      <footer
+        class="h-36 sm:h-24 bg-emerald-800 flex flex-col gap-4 sm:flex-row justify-around py-5 text-emerald-50"
+      >
+        <!----Call Button-->
+        <button
+          class="relative group border border-emerald-50 rounded-full h-fit px-32 py-2 cursor-pointer"
+        >
+          <div class="flex items-center justify-center gap-4">
+            <i class="fa-solid fa-phone"></i>
+            <div>Call</div>
+          </div>
+          <div
+            class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-emerald-700 text-emerald-50 rounded-full transition-all duration-300 opacity-0 group-hover:opacity-100 group-focus:opacity-100"
+          >
+            +91 9862407339
+          </div>
+        </button>
+
+        <!----Email button--->
+        <button
+          class="relative group border border-emerald-50 rounded-full h-fit px-32 py-2 cursor-pointer"
+        >
+          <div class="flex items-center justify-center gap-4">
+            <i class="fa-solid fa-envelope"></i>
+            <div>Email</div>
+          </div>
+          <div
+            class="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-emerald-700 text-emerald-50 rounded-full transition-all duration-300 opacity-0 group-hover:opacity-100 group-focus:opacity-100"
+          >
+            anikat.1999.akas@gmail.com
+          </div>
+        </button>
+      </footer>
+    </main>
+    <!-----------------Pop Up-------------->
+
+    <!----------Pop-up-1----->
+
+    <div
+      id="popup1"
+      class="h-full w-full fixed top-0 left-0 bg-black bg-opacity-65 z-30 target:flex justify-center items-center target:opacity-100 opacity-0 hidden transition-all duration-300"
+    >
+      <div
+        class="w-[90%] sm:w-[75%] h-[50%] sm:h-[60%] rounded-md bg-white shadow-md p-5 relative transition-all duration-300"
+      >
+        <a href="#services" class="absolute right-10 top-4 text-2xl">&times;</a>
+        <div class="p-5 h-full bg-slate-50 rounded-md">
+          <img src="../img/logo-udemy.svg" alt="udemy-logo" class="h-10" />
+
+          <article class="flex flex-col justify-between h-[90%] pt-5">
+            <div class="flex flex-col gap-2">
+              <h5 class="text-slate-500 text-xs uppercase">
+                Certificate of completion
+              </h5>
+              <h1 class="text-xl sm:text-3xl md:text-5xl">
+                Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+              </h1>
+              <h6 class="text-xs">
+                Instructors
+                <strong>Jonas Schmedtmann</strong>
+              </h6>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="text-lg sm:text-xl md:text-3xl">
+                Anikat Kumar Kushwaha
+              </div>
+              <div class="text-xs">Date <strong>June 22, 2023</strong></div>
+              <div class="text-xs">
+                Length <strong>28.5 total hours</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------Pop Up 2-------------->
+    <div
+      id="popup2"
+      class="h-full w-full fixed top-0 left-0 bg-black bg-opacity-65 z-30 target:flex justify-center items-center target:opacity-100 opacity-0 hidden transition-all duration-300"
+    >
+      <div
+        class="w-[90%] sm:w-[75%] h-[50%] sm:h-[60%] rounded-md bg-white shadow-md p-5 relative transition-all duration-300"
+      >
+        <a href="#services" class="absolute right-10 top-4 text-2xl">&times;</a>
+        <div class="p-5 h-full bg-slate-50 rounded-md">
+          <img src="../img/logo-udemy.svg" alt="udemy-logo" class="h-10" />
+
+          <article class="flex flex-col justify-between h-[90%] pt-5">
+            <div class="flex flex-col gap-2">
+              <h5 class="text-slate-500 text-xs uppercase">
+                Certificate of completion
+              </h5>
+              <h1 class="text-xl sm:text-3xl md:text-5xl">
+                React Native - The Practical Guide [2024]
+              </h1>
+              <h6 class="text-xs">
+                Instructors
+                <strong
+                  >Academind by Maximilian Schwarzmüller, Maximilian
+                  Schwarzmüller</strong
+                >
+              </h6>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="text-lg sm:text-xl md:text-3xl">
+                Anikat Kumar Kushwaha
+              </div>
+              <div class="text-xs">Date <strong>June 22, 2023</strong></div>
+              <div class="text-xs">
+                Length <strong>28.5 total hours</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <!---------Pop-up-3------>
+    <div
+      id="popup3"
+      class="h-full w-full fixed top-0 left-0 bg-black bg-opacity-65 z-30 target:flex justify-center items-center target:opacity-100 opacity-0 hidden transition-all duration-300"
+    >
+      <div
+        class="w-[90%] sm:w-[75%] h-[50%] sm:h-[60%] rounded-md bg-white shadow-md p-5 relative transition-all duration-300"
+      >
+        <a href="#services" class="absolute right-10 top-4 text-2xl">&times;</a>
+        <div class="p-5 h-full bg-slate-50 rounded-md">
+          <img src="../img/logo-udemy.svg" alt="udemy-logo" class="h-10" />
+
+          <article class="flex flex-col justify-between h-[90%] pt-5">
+            <div class="flex flex-col gap-2">
+              <h5 class="text-slate-500 text-xs uppercase">
+                Certificate of completion
+              </h5>
+              <h1 class="text-xl sm:text-3xl md:text-5xl">
+                React - The Complete Guide 2024 (incl. Next.js, Redux)
+              </h1>
+              <h6 class="text-xs">
+                Instructors
+                <strong
+                  >Academind by Maximilian Schwarzmüller, Maximilian
+                  Schwarzmüller</strong
+                >
+              </h6>
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="text-lg sm:text-xl md:text-3xl">
+                Anikat Kumar Kushwaha
+              </div>
+              <div class="text-xs">Date <strong>June 22, 2023</strong></div>
+              <div class="text-xs">
+                Length <strong>28.5 total hours</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

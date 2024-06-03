@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .side-bar-nav {
+    @apply hover:bg-emerald-200 transition-all duration-300 w-full py-3 flex justify-center items-center;
+  }
+  .main-nav-bar {
+    @apply hover:border-2 hover:border-emerald-100 px-4 py-2 rounded-full transition-all duration-200;
+  }
+  .heading-text {
+    @apply text-2xl sm:text-3xl uppercase transition-all hover:-skew-x-12 hover:scale-105;
+  }
+  .certificate-card {
+    @apply w-64 md:w-72 bg-slate-200 rounded p-4 transition-all duration-300 shadow-md hover:shadow-xl hover:scale-105;
+  }
+  .certificate-button {
+    @apply bg-gradient-to-r from-violet-600 via-violet-500 to-violet-600 text-violet-50 px-4 py-2 rounded-full shadow-md hover:-translate-y-2 active:-translate-y-1 transition-all duration-300 hover:shadow-xl;
+  }
+  .card-back {
+    @apply flip-card-back absolute w-full h-full bg-white flex flex-col justify-between p-4 rounded-sm shadow-2xl gap-2;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.peer:checked ~ .nav-menu {
+  transform: translateX(0);
+}
+
+.flip-card {
+  perspective: 1000px;
+}
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
